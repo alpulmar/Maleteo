@@ -210,9 +210,9 @@ footer{
 
 /*MEDIA QUERIES*/
 
-@media (max-width:1000px){
+@media (max-width:1080px){
     .jumbotron{
-        background-image: url('/assets/maleteo-imagenes/img/jumbo@1x.png');
+        background-image: url('/assets/maleteo-imagenes/img/jumbo@2x.jpg');
     }
 
     .store-logos{
@@ -226,5 +226,65 @@ footer{
 
     .store-message{
         padding: 30px;
+    }
+}
+
+@media (max-width:768px){
+    .jumbotron{
+        background-image: url('/assets/maleteo-imagenes/img/jumbo@2x.jpg');
+    }
+
+    footer {
+        font-size: 20px;
+    }
+
+    .store-logos {
+        flex-direction: column;
+    }
+
+    .stores {
+      font-size:40px;
+      width: 100%;
+    }
+    
+    .store-message{
+        padding:30px;
+    }
+    .paso-titulo {
+       padding: 10px;
+       font-size: 20px;
+    }
+
+    .pasos, .opiniones {
+       flex-direction: column;
+    }
+
+    .paso, .opinion {
+       width: 100%;
+       padding: 2%;
+    }     
+
+    .contacto {
+       margin:5px auto;
+       display: flex;
+       width:100%;
+   
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+
+    .contacto-foto {
+       width: 80%;
+       height: auto; 
+    }
+
+    .contacto-formulario {
+       width: 80%;
+       border: 1px solid lightgray;
+       padding: 5%;
+   
+       display: flex;
+       flex-direction: column;
     }
 }
